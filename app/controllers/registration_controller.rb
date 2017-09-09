@@ -1,7 +1,9 @@
 class RegistrationController < ApplicationController
 
 	def new
-		Team.create(user_params)
+		@team = Team.create(user_params)
+		byebug
+		TeamMailer.on_registration_mail(@team).deliver_now
 		byebug
 	end
 
