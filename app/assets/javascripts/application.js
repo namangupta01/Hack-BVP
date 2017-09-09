@@ -11,5 +11,37 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function () {
+	$('#myModal').on('shown.bs.modal', function () {
+	  $('#myInput').focus()
+	})
+	
+	var elem = $('#nav-top');
+	var distance = elem.offset().top;
+	    $window = $(window);
+
+	$window.scroll(function() {
+	    if ( $window.scrollTop() >= distance ){
+	        // Your div has reached the top
+	        elem.removeClass("navbar-static-top");
+	        elem.addClass("navbar-fixed-top dummy");
+	    }
+	    else{
+	        elem.removeClass("navbar-fixed-top dummy");
+	        elem.addClass("navbar-static-top");
+	    }
+	});
+
+	$(document).on('click', 'a', function(event){
+	    event.preventDefault();
+
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 500);
+	});
+
+});

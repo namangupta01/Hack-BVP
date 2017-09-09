@@ -13,3 +13,175 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+	position: relative;
+	background: linear-gradient(to bottom, #232526, #414345);
+}
+
+*{
+	box-sizing: border-box;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1024px){
+
+	.wrapper{
+		width: 94%;
+	}
+
+	.wrapper>.container-fluid>#header{
+		padding-top: 50%;
+    	padding-bottom: 44%;
+	}
+
+	.wrapper>.container-fluid>#header>img{
+		width: 50vw;
+	}
+
+	.wrapper>.container-fluid>#header>h1{
+		font-size: 4em;
+	}
+
+	.wrapper>.container-fluid>#header>p{
+		font-size: 1.5em;
+	}
+
+
+	.wrapper .container-fluid main .card{
+		padding: 0;
+	}
+
+	#bs-example-navbar-collapse-1 > ul{
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+
+
+	.wrapper #clients span#clients-inner-span{
+		flex-direction: column;
+		margin-left: 6px;
+	}
+
+	.wrapper #clients span#clients-inner-span .client-card {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	.wrapper #clients span#clients-inner-span .client-card img{
+		width: 200px;
+    	height: 200px;
+	}
+
+	.wrapper .container-fluid main #about span{
+		width: 100%;
+		padding: 18px;
+	}
+
+	.wrapper .container-fluid main #about{
+		flex-direction: column-reverse;
+	}
+
+	.wrapper .container-fluid main .card span p{
+		font-size: 1.2em;
+	}
+
+	.wrapper .container-fluid main #features div{
+		flex-direction: column;
+	}
+
+	.wrapper #services>p{
+		width: 100%;
+	    padding: 18px;
+	}
+
+	.wrapper #services div{
+		flex-direction: column-reverse;
+	}
+
+	.img-circle{
+		width: 200px;
+	}
+
+	.wrapper .container-fluid main #features span.icon{
+		height: 2em;
+    	width: 2em;
+	}
+
+	#mobile-nav{
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	#bs-example-navbar-collapse-1{
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	#services > span > div.container > ul > li:nth-child(1) > div.timeline-panel > button{
+		width: 100%;
+		padding: 6px 0;
+	}
+
+	#services > span > div.container > ul > li:nth-child(1) > div.timeline-panel > a{
+		width: 100%;
+	    padding: 4px;
+	}
+
+	@media (max-width:1024px) and (min-width:767px) {
+		#bs-example-navbar-collapse-1 > ul{
+			flex-direction: row;
+			justify-content:center;
+		}
+	}
+
+}
+
+@media screen and (max-width: 450px){
+
+		*{
+    			::-webkit-scrollbar{
+					display:none;
+				}		
+		}
+
+		#clients{
+			width: 99%;
+		}
+
+		#clients>span{
+			width: 100%;
+			margin-right: 10px;
+		}
+
+		.wrapper #clients span#clients-inner-span{
+			flex-direction: row;
+    		overflow: scroll;
+
+		}
+
+		.wrapper #clients span#clients-inner-span .client-card{
+			min-width: 98%;
+		}		
+
+		.wrapper #clients span#clients-inner-span > div:nth-child(1){
+			margin-left: 98vw;
+			margin-right: 14px;
+		}
+
+		.wrapper #clients span#clients-inner-span > div:nth-child(1){
+
+		}
+	}
