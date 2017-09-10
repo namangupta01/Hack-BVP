@@ -266,12 +266,12 @@
 			text-align: center;
 		}
 
-
-		div#para,.clearfix{
-			display: flex;
-			flex-direction:column;
-			justify-content: space-around;
-			align-items: center;
+		.rules-list{
+			ul>li>p{
+				margin-left: 16px;
+				font-size: 1.4em;
+				text-align: justify;
+			}
 		}
 
 		>span{
