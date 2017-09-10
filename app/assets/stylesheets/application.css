@@ -69,18 +69,18 @@ body{
 
 
 
-	.wrapper #clients span#clients-inner-span{
+	.wrapper #developers span#developers-inner-span{
 		flex-direction: column;
 		margin-left: 6px;
 	}
 
-	.wrapper #clients span#clients-inner-span .client-card {
+	.wrapper #developers span#developers-inner-span .developers-card {
 		width: 90%;
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
 
-	.wrapper #clients span#clients-inner-span .client-card img{
+	.wrapper #developers span#developers-inner-span .developers-card img{
 		width: 200px;
     	height: 200px;
 	}
@@ -102,12 +102,12 @@ body{
 		flex-direction: column;
 	}
 
-	.wrapper #services>p{
+	.wrapper #rules>p{
 		width: 100%;
 	    padding: 18px;
 	}
 
-	.wrapper #services div{
+	.wrapper #rules div{
 		flex-direction: column-reverse;
 	}
 
@@ -130,12 +130,12 @@ body{
 		margin-left: 0;
 	}
 
-	#services > span > div.container > ul > li:nth-child(1) > div.timeline-panel > button{
+	#rules > span > div.container > ul > li:nth-child(1) > div.timeline-panel > button{
 		width: 100%;
 		padding: 6px 0;
 	}
 
-	#services > span > div.container > ul > li:nth-child(1) > div.timeline-panel > a{
+	#rules > span > div.container > ul > li:nth-child(1) > div.timeline-panel > a{
 		width: 100%;
 	    padding: 4px;
 	}
@@ -157,31 +157,31 @@ body{
 				}		
 		}
 
-		#clients{
+		#developers{
 			width: 99%;
 		}
 
-		#clients>span{
+		#developers>span{
 			width: 100%;
 			margin-right: 10px;
 		}
 
-		.wrapper #clients span#clients-inner-span{
+		.wrapper #developers span#developers-inner-span{
 			flex-direction: row;
     		overflow: scroll;
 
 		}
 
-		.wrapper #clients span#clients-inner-span .client-card{
+		.wrapper #developers span#developers-inner-span .developers-card{
 			min-width: 98%;
 		}		
 
-		.wrapper #clients span#clients-inner-span > div:nth-child(1){
+		.wrapper #developers span#developers-inner-span > div:nth-child(1){
 			margin-left: 98vw;
 			margin-right: 14px;
 		}
 
-		.wrapper #clients span#clients-inner-span > div:nth-child(1){
+		.wrapper #developers span#developers-inner-span > div:nth-child(1){
 
 		}
 	}

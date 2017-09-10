@@ -224,23 +224,23 @@
 
 	}
 
-	#clients{
+	#developers{
 
 		h1{
 			text-align: center;
 		}
 
-		span#clients-inner-span{
+		span#developers-inner-span{
 			display: flex;
 			justify-content: space-around;
-			.client-card{
+			.developers-card{
 				box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
 				box-sizing: border-box;
 				padding: 32px;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				width: 31%;
+				max-width: 31%;
 
 				h3{
 					color: rgb(99, 99, 99);
@@ -254,25 +254,22 @@
 				}
 			}
 
-			.client-card:hover{
+			.developers-card:hover{
 				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 			}
 		}
 	}
 
-	#services{
+	#rules{
 
 		h1{
 			text-align: center;
 		}
 
-		p{
-			width: 87%;
-			text-align: justify;
-		}
 
 		div#para,.clearfix{
 			display: flex;
+			flex-direction:column;
 			justify-content: space-around;
 			align-items: center;
 		}
