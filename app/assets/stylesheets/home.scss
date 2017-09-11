@@ -329,6 +329,7 @@
 		}
 
 		.timeline > li > .timeline-panel {
+		  //height: 100px;
 		  width: 47%;
 		  @media screen and (max-width: 1024px) {
 		  	width: 43%;
@@ -357,7 +358,7 @@
 
 		  div.timeline-body>p{
 		  	width: 100%;
-		  	font-size: 2em;
+		  	font-size: 1.6em;
 		  	@media screen and (max-width: 1024px) {
 		  		font-size: 0.9em;
 		  	}
@@ -397,7 +398,7 @@
 		  text-align: center;
 		  position: absolute;
 		  top: 26px;
-		  left: 51%;
+		  left: 52%;
 		  margin-left: -28px;
 		  background-color: #999999;
 		  z-index: 100;
@@ -457,6 +458,10 @@
 		.timeline-title {
 		  margin-top: 0;
 		  color: inherit;
+		}
+
+		p{
+			margin-bottom: 0;
 		}
 
 		.timeline-body > p,
