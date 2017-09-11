@@ -169,6 +169,7 @@ body{
 		.wrapper #developers span#developers-inner-span{
 			flex-direction: row;
     		overflow: scroll;
+    		/*margin-left: 692px;*/
 
 		}
 
@@ -177,19 +178,33 @@ body{
 		}		
 
 		.wrapper #developers span#developers-inner-span > div:nth-child(1){
-			margin-left: 98vw;
+			margin-left: 184vw;
 			margin-right: 14px;
 		}
 
 		.wrapper #developers span#developers-inner-span > div:nth-child(1){
 
 		}
+
+		.wrapper #rules div.rules-list{
+			width: 100%;
+			margin: 0;
+		}
+
+		.wrapper #rules div.rules-list ul{
+			padding-left: 16px;
+    		padding-right: 16px;
+		}
+
+		.wrapper #rules .rules-list ul > li > p{
+			margin-left: 0;
+		}
+
+		.wrapper #map{
+			margin-top: 0;
+			height: 200px;
+		  	width: 87%;
+		}
+
 	}
-	#map {
-  height: 400px;
-  width: 87%;
-  margin-top: -40px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
- }
+	

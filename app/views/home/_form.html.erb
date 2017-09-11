@@ -29,15 +29,22 @@
                       id="exampleInputEmail1" placeholder="Team name" name=team[team_name]>
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Team Size</label>
-                      <input type="number" class="form-control"
-                      id="exampleInputEmail1" placeholder="Enter email" min="2" max="4" name=team[size] >
+                    <label for="exampleInputTeamSize1">Team Size</label>
+                      <input type="number" onkeypress="return (event.charCode >= 49 && event.charCode<=53 && this.value.length<=0 )" class="form-control"
+                      id="exampleInputTeamSize1" placeholder="Enter Team Size (Leave it blank if you are joining the above team)" min="1" max="5" name=team[size] >
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                       <input type="email" class="form-control"
                       id="exampleInputEmail1" placeholder="Enter email" name=team[email] >
                   </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Github handle</label>
+                      <input type="github" class="form-control"
+                      id="exampleInputGithub1" placeholder="Enter Your github handle" name=team[github] >
+                  </div>
+
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default"
                           data-dismiss="modal">

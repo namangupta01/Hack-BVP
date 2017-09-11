@@ -6,7 +6,7 @@ class RegistrationController < ApplicationController
 	end
 
 	def user_params
-		params.require(:team).permit(:team_name,:size,:email)
+		params.require(:team).permit(:team_name,:size,:email,:github)
 	end
 
 end
