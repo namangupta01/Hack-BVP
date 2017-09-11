@@ -49,7 +49,7 @@
 			#header-btn{
 				color: white;
     		background-color: transparent;
-    		border-color: #ccc;	
+    		border-color: #ccc;
     		font-size: 1.5em;
 			}
 
@@ -74,7 +74,7 @@
 					border-top-left-radius: 6px;
 					border-top-right-radius: 6px;
 					margin-bottom: 0;
-					
+
 
 					.navbar-static-top {
 					    min-height: 80px;
@@ -115,10 +115,10 @@
 				display: flex;
 				justify-content: center;
 				span{
-					
+
 					h1{
-					    color: #636363;	
-					    margin-bottom: 1.7em;					    
+					    color: #636363;
+					    margin-bottom: 1.7em;
 					}
 
 					p{
@@ -126,7 +126,7 @@
 						font-size: 1.6em;
 					}
 				}
-					
+
 				border-top: 1px solid #dddddd;
 			}
 
@@ -260,20 +260,9 @@
 		}
 	}
 
-	#rules{
-
+	#timeline{
 		h1{
 			text-align: center;
-		}
-
-		.rules-list{
-			width:70%;
-			margin: 0 auto;
-			ul>li>p{
-				margin-left: 16px;
-				font-size: 1.4em;
-				text-align: justify;
-			}
 		}
 
 		>span{
@@ -360,7 +349,7 @@
 
     		@media screen and (max-width: 1024px) {
     			padding: 0px;
-    		}	
+    		}
 
 		  }
 
@@ -421,7 +410,7 @@
 		    line-height: 35px;
 		    font-size: 0.9em;
 		    top: 26px;
-		    left: 54%; 
+		    left: 54%;
 		  }
 		}
 
@@ -478,6 +467,23 @@
 		}
 	}
 
+	#rules{
+
+		h1{
+			text-align: center;
+		}
+
+		.rules-list{
+			width:70%;
+			margin: 0 auto;
+			ul>li>p{
+				margin-left: 16px;
+				font-size: 1.4em;
+				text-align: justify;
+			}
+		}
+	}
+
 	.dummy{
 		width: 87%;
 
@@ -490,7 +496,7 @@
 		background-color: rgba(248,248,248,0.95);
 	}
 
-	
+
 	@keyframes easein {
 	    from {opacity: 0;}
 	    to {opacity: 1;}
