@@ -224,6 +224,7 @@
 
 	}
 
+
 	#developers{
 
 		h1{
@@ -481,6 +482,26 @@
 				margin-left: 16px;
 				font-size: 1.4em;
 				text-align: justify;
+			}
+		}
+	}
+
+	#sponsors{
+
+		h1{
+			text-align: center;
+		}
+
+		span>img{
+				margin-bottom: 40px;
+			}
+
+		.sponsor-info{
+			width:70%;
+			margin: 0 auto;
+			p{
+			font-size: 1.8em;
+				text-align: center;
 			}
 		}
 	}
