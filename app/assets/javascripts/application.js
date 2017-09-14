@@ -37,11 +37,13 @@ $(document).ready(function () {
 	});
 
 	$(document).on('click', 'a', function(event){
-	    event.preventDefault();
+		if($("#header > a")[0].parentElement.id !== "header"){
+		    event.preventDefault();
 
-	    $('html, body').animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top
-	    }, 500);
+		    $('html, body').animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		}
 	});
 });
 
