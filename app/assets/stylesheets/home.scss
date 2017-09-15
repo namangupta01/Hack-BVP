@@ -14,21 +14,22 @@
 			align-items: center;
 			color: white;
 			padding: 18%;
+			padding-top: 7%;
 			animation-name: easein;
 			animation-duration: 4s;
 
 			#header-img{
 
-				background-color: white;
+				//background-color: white;
 			    border-radius: 50%;
 			    padding: 21px;
-			    box-shadow:  0 0 10px 5px rgba(0,0,0,0.1);
+			    //box-shadow:  0 0 10px 5px rgba(0,0,0,0.1);
 
 				img{
-					width: 8vw;
+					width: 18vw;
 					animation-name: rot;
 					animation-duration: 1s;
-					background-color: white;
+					//background-color: white;
 					@media screen and (max-width: 1024px) {
 						width: 18vw;
 					}
@@ -500,9 +501,26 @@
 			text-align: center;
 		}
 
-		span>img{
-				margin-bottom: 40px;
+		>span{
+			>span{
+				width: 100%;
+				display: flex;
+				    flex-wrap: wrap;
+	    			justify-content: space-around;
+					    align-items: center;
+				>img{
+				    height: 100%;
+					width: 40%;
+					margin-bottom: 40px;
+				}
 			}
+			>div{
+				p{
+					margin-top: 1em;
+					margin-bottom: 1em;
+				}	
+			}
+		}
 
 		.sponsor-info{
 			width:70%;

@@ -40,11 +40,11 @@ body{
 	}
 
 	.wrapper>.container-fluid>#header{
-		padding-top: 50%;
+		padding-top: 25%;
     	padding-bottom: 44%;
 	}
 
-	.wrapper>.container-fluid>#header>img{
+	.wrapper>.container-fluid>#header>#header-img>img{
 		width: 50vw;
 	}
 
