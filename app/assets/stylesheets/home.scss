@@ -90,7 +90,7 @@
 						>li{
 							float: none;
 	      					display: inline-block;
-	      					margin: 0 20px;
+	      					margin: 0 15px;
 						}
 					}
 
@@ -98,7 +98,7 @@
 					    padding-top: 0px;
 					    padding-bottom: 0px;
 					    line-height: 54px;
-					    font-size: 1.6em;
+					    font-size: 1.5em;
 					    margin-top: 4px;
 					    margin-bottom: 4px;
 					    border-radius: 8px;
@@ -531,6 +531,34 @@
 			}
 		}
 	}
+
+	#community-partners{
+
+		h1{
+			text-align: center;
+		}
+
+		>span{
+			>span{
+				width: 100%;
+				display: flex;
+				    flex-wrap: wrap;
+	    			justify-content: space-around;
+					    align-items: center;
+				>img{
+				    height: 100%;
+					width: 40%;
+					margin-bottom: 40px;
+				}
+			}
+			>div{
+				p{
+					margin-top: 1em;
+					margin-bottom: 1em;
+				}	
+			}
+		}
+}
 
 	.dummy{
 		width: 87%;
