@@ -15,7 +15,7 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function () {
+$(document).on('turbolinks:load',function () {
 	$('#myModal').on('shown.bs.modal', function () {
 	  $('#myInput').focus()
 	})
@@ -37,24 +37,26 @@ $(document).ready(function () {
 	});
 
 	$(document).on('click', 'a', function(event){
-		if($("#header > a")[0].parentElement.id !== "header"){
+		if($(this).html().trim() !== "Register Here"){
 		    event.preventDefault();
 
 		    $('html, body').animate({
 		        scrollTop: $( $.attr(this, 'href') ).offset().top
 		    }, 500);
-		}
+		};
 	});
+
+	function initMap() {
+	  var uluru = {lat: -25.363, lng: 131.044};
+	  var map = new google.maps.Map(document.getElementById('map'), {
+	    zoom: 4,
+	    center: uluru
+	  });
+	  var marker = new google.maps.Marker({
+	    position: uluru,
+	    map: map
+	  });
+	}
+
 });
 
-function initMap() {
-  var uluru = {lat: -25.363, lng: 131.044};
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: uluru
-  });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
-  }
