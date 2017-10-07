@@ -550,6 +550,17 @@
 					width: 40%;
 					margin-bottom: 40px;
 				}
+				>a{
+					display: flex;
+					flex-wrap: wrap;
+	    			justify-content: space-around;
+					align-items: center;
+					>img{
+				    height: 100%;
+					width: 40%;
+					margin-bottom: 40px;
+				}
+				}
 			}
 			>div{
 				p{

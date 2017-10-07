@@ -37,9 +37,10 @@ $(document).on('turbolinks:load',function () {
 	});
 
 	$(document).on('click', 'a', function(event){
-		if($(this).html().trim() !== "Register Here"){
+		if (this.id=="hack-society"){
+		}
+		else if ($(this).html().trim() !== "Register Here"){
 		    event.preventDefault();
-
 		    $('html, body').animate({
 		        scrollTop: $( $.attr(this, 'href') ).offset().top
 		    }, 500);
